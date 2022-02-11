@@ -37,7 +37,7 @@ tcp_max_orphans  | |
 tcp_max_reordering | |
 tcp_max_syn_backlog | |
 tcp_max_tw_buckets | |
-tcp_mem | |
+tcp_mem | カーネルでTCP用に使用できるメモリサイズ |
 tcp_min_rtt_wlen | |
 tcp_min_snd_mss | |
 tcp_min_tso_segs | |
@@ -70,3 +70,6 @@ tcp_tw_reuse | |
 tcp_window_scaling | |
 tcp_wmem | |
 tcp_workaround_signed_windows | |
+
+### 参考
+* [LinuxサーバーのTCPネットワークのパフォーマンスを決定するカーネルパラメータ – 3編](https://meetup-jp.toast.com/1516

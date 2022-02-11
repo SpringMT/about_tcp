@@ -27,9 +27,9 @@ tcp_fin_timeout | |
 tcp_frto | |
 tcp_fwmark_accept | |
 tcp_invalid_ratelimit | |
-tcp_keepalive_intvl | |
-tcp_keepalive_probes | |
-tcp_keepalive_time | |
+tcp_keepalive_intvl | | keepalive packetを送信する間隔を秒単位で指定
+tcp_keepalive_probes | | keepalive packetを送信する回数。　この回数だけ試しても接続先から反応が得られない場合は、 あきらめて接続を切断する。
+tcp_keepalive_time | | keepalive packetを送信するまでの時間を秒単位で指定
 tcp_l3mdev_accept | |
 tcp_limit_output_bytes | |
 tcp_low_latency | |
@@ -66,10 +66,12 @@ tcp_syncookies | |
 tcp_thin_linear_timeouts | |
 tcp_timestamps | |
 tcp_tso_win_divisor | |
-tcp_tw_reuse | |
+tcp_tw_reuse | | バージョン4.12から廃止
 tcp_window_scaling | |
 tcp_wmem | |
 tcp_workaround_signed_windows | |
 
 ### 参考
 * [LinuxサーバーのTCPネットワークのパフォーマンスを決定するカーネルパラメータ – 3編](https://meetup-jp.toast.com/1516
+* https://linuxjm.osdn.jp/html/LDP_man-pages/man7/tcp.7.html
+* [net.ipv4.tcp_tw_recycle は廃止されました ― その危険性を理解する](https://qiita.com/tmshn/items/b49f1b51bfc472968b30)
